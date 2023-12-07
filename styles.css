@@ -1,0 +1,47 @@
+body
+{
+
+    color:black;
+    background-image: url("C:/Users/jsmhm/HTML/abstract-blue-background-simple-design-for-your-website-free-vector.webp");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: aqua;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+hr{
+    
+    border-style:dotted none none;
+    border-color:black;
+    border-width:5px;
+    height:0px;
+    width:5%;
+}
+h1{
+    color:black;
+}
+h2{
+    color:black;
+}
+a
+{
+    color:black;
+}
+.mouseOver{
+    background-color: yellow;
+    color:red;
+}
+
+.highlightable {
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: background-color 1s;
+}
+
+.highlighted {
+    background-color: yellow;
+}
+
