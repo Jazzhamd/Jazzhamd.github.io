@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email validation</title>
+    <h1 style=" align-items: center;
+    justify-content: center;
+    text-align: center;">Email validation</h1>
+</head>
+<body style="background-color: aqua;">
+   <div style=" align-items: center;
+   justify-content: center;
+   text-align: center;"> <p style="font-family: cursive;">Email:</p><input type="email" id="e-mail"><br>
+    <p style="font-family:cursive;">Password:</p><input type="password" id="pswd"><br><br><br>
+    <button onclick="validate()">VALIDATE</button>
+    </div>
+</body>
+<script>
+    function validate(){
+        const email=document.getElementById("e-mail");
+        const Pswd=document.getElementById("pswd");
+        const regex1=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        const regex2=/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^0-9a-zA-Z])(?!.*\s).{8,15}$/;
+        if(regex1.test(email.value)&&regex2.test(Pswd.value)){
+            alert("Valid");
+        }
+        else if(!(regex1.test(email.value))||!(regex2.test(Pswd.value))){
+            alert("Invalid");
+        }
+
+        
+    }
+</script>
+</html>
